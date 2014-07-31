@@ -25,7 +25,7 @@ maven-artifacts
     
 	A properly-useful pom.xml contains a <distributionManagement> configuration that specifies the repositories to 			which     one’s project artifacts should be deployed.  If you’re only going to use Github-hosted Maven 			repositories, then we       just need to stub this configuration out (doing this will not be necessary in 		the future1):
 
-    	```xml
+	```
     	<distributionManagement>
     		<repository>
     			<id>repo</id>
@@ -51,7 +51,7 @@ maven-artifacts
 
     	add this to the depending project:
 
-	```xml
+	```
 	<repositories>
     	<repository>
         	<id>cemerick-snapshots</id>
