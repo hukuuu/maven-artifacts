@@ -37,7 +37,7 @@ A properly-useful pom.xml contains a <distributionManagement> configuration that
 Now let’s run the clutch build and deploy our artifacts (which handily implies running all of the project’s 			    tests),      providing a path to our repo’s clone directory using the altDeploymentRepository system 			        property:
 
 ```
-mvn -DaltDeploymentRepository=snapshot-repo::default::file:../../cemerick-mvn-repo/snapshots clean deploy
+mvn -DaltDeploymentRepository=snapshot-repo::default::file:../maven-artifacts/snapshots clean deploy
 ```
 
 
@@ -50,8 +50,8 @@ add this to the depending project:
 ```	
 <repositories>
 	<repository>
-    	<id>cemerick-snapshots</id>
-    	<url>https://github.com/cemerick/cemerick-mvn-repo/raw/master/snapshots</url>
+		<id>huku-maven-artifacts</id>
+		<url>https://github.com/hukuuu/maven-artifacts/tree/master/snapshots</url>
 	</repository>
 </repositories>
 ```
